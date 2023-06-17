@@ -4,8 +4,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import {useNavigate} from 'react-router'
-import { Link } from "react-router-dom/dist";
+
 import Categories from "../../Pages/Categories/Categories";
 import Popular from "../../Pages/Popular/Popular";
 import Achieve from "../../Pages/Achieve/Achieve";
@@ -45,20 +44,12 @@ function a11yProps(index) {
 
 export default function BasicTabs() {
   const [value, setValue] = React.useState(0);
-  const navigate = useNavigate();
+  
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-  const handlecategorynavigate = () => {
-    navigate('/')
-  }
-  const handlepopularpostnavigate = () => {
-    navigate("/popularposts");
-  };
-  const handleachievenavigate = () => {
-    navigate("/achieve");
-  };
+ 
 
   return (
     <Box sx={{ width: "100%" }}>
