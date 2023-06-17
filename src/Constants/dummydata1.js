@@ -1,9 +1,10 @@
-import img1 from "../Images/data11.png";
+import img1 from "../Images/data12.png";
+import img2 from "../Images/data11.png";
 import img3 from "../Images/data13.png";
 export const data1 = [
   {
     id: 1,
-    img: {},
+    img: img2,
     heading: "Technology",
     content: "Software, hardware, gadgets, programming, cybersecurity, etc.",
   },
